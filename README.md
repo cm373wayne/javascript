@@ -1,4 +1,4 @@
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+*根據CMoney的開發習慣修改了原Airbnb規範*
 
 # Airbnb JavaScript Style Guide() {
 
@@ -8,12 +8,12 @@
 ## Table of Contents
 
   1. [Types](#types)
-  1. [Objects](#objects)
-  1. [Arrays](#arrays)
-  1. [Strings](#strings)
-  1. [Functions](#functions)
-  1. [Properties](#properties)
-  1. [Variables](#variables)
+  1. [物件](#objects)
+  1. [陣列](#arrays)
+  1. [字串](#strings)
+  1. [函式](#functions)
+  1. [屬性](#properties)
+  1. [變數](#variables)
   1. [Hoisting](#hoisting)
   1. [Conditional Expressions & Equality](#conditional-expressions--equality)
   1. [Blocks](#blocks)
@@ -39,7 +39,7 @@
   1. [Contributors](#contributors)
   1. [License](#license)
 
-## Types
+## <a name='types'>Types</a>
 
   - **Primitives**: When you access a primitive type you work directly on its value.
 
@@ -74,9 +74,9 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Objects
+## <a name='objects'>物件</a>
 
-  - Use the literal syntax for object creation.
+  - 使用大括弧建立物件。
 
     ```javascript
     // bad
@@ -86,7 +86,7 @@
     var item = {};
     ```
 
-  - Don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61).
+  - 不要用 [保留字](http://es5.github.io/#x7.6.1) 作為物件的key. 在IE8不會work. [More info](https://github.com/airbnb/javascript/issues/61).
 
     ```javascript
     // bad
@@ -123,9 +123,9 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Arrays
+## 陣列
 
-  - Use the literal syntax for array creation.
+  - 使用中括弧創立陣列。
 
     ```javascript
     // bad
@@ -135,7 +135,7 @@
     var items = [];
     ```
 
-  - If you don't know array length use Array#push.
+  - 在不知陣列長度時使用 Array#push.
 
     ```javascript
     var someStack = [];
@@ -148,7 +148,7 @@
     someStack.push('abracadabra');
     ```
 
-  - When you need to copy an array use Array#slice. [jsPerf](http://jsperf.com/converting-arguments-to-an-array/7)
+  - 陣列需要複製一份時使用 Array#slice. [jsPerf](http://jsperf.com/converting-arguments-to-an-array/7)
 
     ```javascript
     var len = items.length;
@@ -164,7 +164,7 @@
     itemsCopy = items.slice();
     ```
 
-  - To convert an array-like object to an array, use Array#slice.
+  - 將以int為key的Dictionary強制轉換為陣列時，請用 Array#slice.
 
     ```javascript
     function trigger() {
@@ -178,7 +178,7 @@
 
 ## Strings
 
-  - Use single quotes `''` for strings.
+  - 字串習慣使用單引號 `''` 。
 
     ```javascript
     // bad
@@ -260,9 +260,9 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Functions
+## <a name='functions'>函式</a>
 
-  - Function expressions:
+  - 函式表示式:
 
     ```javascript
     // anonymous function expression
@@ -301,7 +301,7 @@
     }
     ```
 
-  - Never name a parameter `arguments`, this will take precedence over the `arguments` object that is given to every function scope.
+  - 參數不能命名為 `arguments`, this will take precedence over the `arguments` object that is given to every function scope.
 
     ```javascript
     // bad
@@ -319,9 +319,9 @@
 
 
 
-## Properties
+## 屬性
 
-  - Use dot notation when accessing properties.
+  - 盡量使用 dot notation 存取物件屬性.
 
     ```javascript
     var luke = {
@@ -354,7 +354,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Variables
+## 變數
 
   - Always use `var` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
 
