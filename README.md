@@ -473,7 +473,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Hoisting
+## <a name="hoisting">Hoisting</a>
 
   - Variable declarations get hoisted to the top of their scope, their assignment does not.
 
@@ -563,7 +563,7 @@
 
 
 
-## Conditional Expressions & Equality
+## <a name="conditional-expressions--equality">Conditional Expressions & Equality</a>
 
   - Use `===` and `!==` over `==` and `!=`.
   - Conditional expressions are evaluated using coercion with the `ToBoolean` method and always follow these simple rules:
