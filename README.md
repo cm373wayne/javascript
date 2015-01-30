@@ -5,7 +5,7 @@
 *A mostly reasonable approach to JavaScript*
 
 
-## Table of Contents
+## <a name="table-of-contents">目錄</a>
 
   1. [Types](#types)
   1. [物件](#objects)
@@ -17,23 +17,23 @@
   1. [Hoisting](#hoisting)
   1. [Conditional Expressions & Equality](#conditional-expressions--equality)
   1. [Blocks](#blocks)
-  1. [Comments](#comments)
-  1. [Whitespace](#whitespace)
-  1. [Commas](#commas)
-  1. [Semicolons](#semicolons)
+  1. [註解](#comments)
+  1. [空白字符](#whitespace)
+  1. [逗號](#commas)
+  1. [分號](#semicolons)
   1. [Type Casting & Coercion](#type-casting--coercion)
   1. [Naming Conventions](#naming-conventions)
   1. [Accessors](#accessors)
   1. [Constructors](#constructors)
   1. [Events](#events)
-  1. [Modules](#modules)
+  1. [模組](#modules)
   1. [jQuery](#jquery)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
   1. [Testing](#testing)
   1. [Performance](#performance)
   1. [Resources](#resources)
   1. [In the Wild](#in-the-wild)
-  1. [Translation](#translation)
+  1. [各語言翻譯](#translation)
   1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
   1. [Chat With Us About Javascript](#chat-with-us-about-javascript)
   1. [Contributors](#contributors)
@@ -123,7 +123,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## 陣列
+## <a name='arrays'>陣列</a>
 
   - 使用中括弧創立陣列。
 
@@ -176,7 +176,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Strings
+## <a name='strings'>Strings</a>
 
   - 字串習慣使用單引號 `''` 。
 
@@ -319,7 +319,7 @@
 
 
 
-## 屬性
+## <a name='properties'>屬性</a>
 
   - 盡量使用 dot notation 存取物件屬性.
 
@@ -354,7 +354,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## 變數
+## <a name='variables'>變數</a>
 
   - Always use `var` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
 
